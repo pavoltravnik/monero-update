@@ -6,7 +6,7 @@ IFS=' ' read -r -a array <<< "$(sha256sum monero-linux-x64-${version}.tar.bz2)";
 if [[ "$(curl -s -L https://github.com/monero-project/monero/releases/latest)" =~ "${array[1]}, ${array[0]}" ]]
   then
     tar -xvjf "monero-linux-x64-${version}.tar.bz2"
-	cp monero-x86_64-linux-gnu-${version}/* /usr/local/bin/
+	cp monero-x86_64-linux-gnu-${version}/* /usr/bin/
   else
   	echo "WARNING HASH MISMATCH!!!"
 fi
