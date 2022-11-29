@@ -2,6 +2,7 @@
 
 
 ```bash
+sudo adduser monero
 sudo apt-get install jq
 sudo wget -O /etc/systemd/system/monerod.service https://raw.githubusercontent.com/monero-project/monero/master/utils/systemd/monerod.service
 sudo wget -O ~/update.sh https://raw.githubusercontent.com/pavoltravnik/monero-update/master/update.sh
